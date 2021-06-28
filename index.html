@@ -8,18 +8,38 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/framework.css">
 </head>
 <body>
+
     <div id="app" class="container">
-         <div class="cont-interno">
+
+         <div class="cont-interno clearfix">
+             <!-- CONTENITORE SINISTRO -->
              <div class="cont-sx float-left">
-                 <header></header>
-                
+                <header class="lightgrey">
+                    <div>
+                        <div>
+                            <img src="img/avatar_io.jpg" alt="">
+                            <p>nome utente</p>
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-circle-notch"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                        
+                    </div>
+                </header>
+                <div></div>
              </div>
 
+            <!-- CONTENITORE DESTRO -->
              <div class="cont-dx float-right"></div>
          </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

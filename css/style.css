@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fas{
+margin-right: 10px;
+color: grey;
+}
+
 .container{
 width: 100%;
 height: 600px;
@@ -17,17 +36,36 @@ padding: 30px;
     margin:auto;
     background-color: cadetblue;
 }
-    
-.float-left{
-    float: left;
-}
 
-.float-right{
-    float: right;
-}
-
+/* CONTENITORE SINISTRO */
 .cont-sx{
     background-color: pink;
-    width: 20%;
+    width: 30%;
     height: 400px;
+    
+}
+ 
+
+
+.cont-sx header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 5px;
+}
+    
+
+.cont-sx img{
+    width: 50px;
+    border-radius: 100%;
+    margin-right:10px;
+}
+
+
+/* DEBUG */
+
+.lightgrey{
+    background-color: lightgrey;
 }
