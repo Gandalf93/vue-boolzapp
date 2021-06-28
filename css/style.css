@@ -18,9 +18,13 @@
     display: table;
 }
 
-.fas{
+.icone{
 margin-right: 10px;
 color: grey;
+}
+
+.lightgrey{
+    background-color: rgb(240, 232, 232);
 }
 
 .container{
@@ -30,23 +34,22 @@ background-color: aquamarine;
 padding: 30px;
 }
 
+
 .cont-interno{
     width: 80%;
-    height: 400px;
+    height: 500px;
     margin:auto;
-    background-color: cadetblue;
+    background-color: white;
+   
 }
 
 /* CONTENITORE SINISTRO */
 .cont-sx{
-    background-color: pink;
-    width: 30%;
-    height: 400px;
-    
+    width: 40%;
+    height: 500px;
+    border: 1px solid lightgrey;
 }
- 
-
-
+    
 .cont-sx header div{
     display: flex;
     flex-direction: row;
@@ -63,9 +66,111 @@ padding: 30px;
     margin-right:10px;
 }
 
+.cont-notifiche{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(77, 216, 226);
+}
 
-/* DEBUG */
+.cont-notifiche a{
+    color: grey;
+}
+.campana{
+    color: rgb(77, 216, 226);
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 10px;
+}
 
-.lightgrey{
-    background-color: lightgrey;
+.searchbar{
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ 
+}
+ 
+
+.left-searchbar{
+    padding: 10px;
+    width: 90%;
+}
+    
+
+.lente{
+    padding: 10px;
+    background-color: white;
+    color: grey;
+}
+
+
+.lista-persone{
+    padding: 10px;
+    overflow-y: scroll;
+    height: 50vh;
+    
+}
+
+.lista-persone ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.lista-persone ul li{
+display: flex;
+margin: 10px 0;
+}
+
+
+
+
+    
+/* CONTENITORE DESTRO     */
+.cont-dx{
+    width: 60%;
+    height: 500px;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../img/mine.jpg);
+}
+
+.cont-dx header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+    
+    
+#head-dx-scritte{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}    
+    
+
+.cont-dx img{
+    width: 50px;
+    border-radius: 100%;
+    margin-right:10px;
+} 
+
+.foot-dx{
+   padding: 5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.msg-dx{
+    width: 90%;
+    padding: 10px;
+}
+
+.foot-dx i{
+    color: grey;
 }

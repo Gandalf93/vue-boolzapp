@@ -15,8 +15,11 @@
     <div id="app" class="container">
 
          <div class="cont-interno clearfix">
-             <!-- CONTENITORE SINISTRO -->
+
+    <!-- CONTENITORE SINISTRO -->
              <div class="cont-sx float-left">
+
+         <!-- header contenitore sx -->
                 <header class="lightgrey">
                     <div>
                         <div>
@@ -25,21 +28,95 @@
                         </div>
                         
                         <div>
-                            <i class="fas fa-circle-notch"></i>
-                            <i class="fas fa-comment-alt"></i>
-                            <i class="fas fa-ellipsis-v"></i>
+                            <i class="fas fa-circle-notch icone"></i>
+                            <i class="fas fa-comment-alt icone"></i>
+                            <i class="fas fa-ellipsis-v icone"></i>
                         </div>
                         
                     </div>
                 </header>
-                <div></div>
-             </div>
+        <!-- barra notifiche -->
+                <div class="cont-notifiche">
+                    <i class="fas fa-bell-slash campana"></i>
+                    <div>
+                        <p>Ricevi notifiche di nuovi messaggi</p>
+                        <a href="#">Attiva notifiche desktop</a>
+                    </div>
+                </div>
+        <!-- searchbar                  -->
+                <div class="searchbar lightgrey">
+                    <i class="fas fa-search lente"></i>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" name="search" id="contacts-filter" class="left-searchbar">
+                </div>
+        <!-- lista contatti                  -->
+                <div class="lista-persone">
+                    <ul>
+                        
+                        <li>
+                            <img src="img/avatar_1.jpg" alt="">
+                            <p>michele</p>
+                        </li>
+                        <li>
+                            <img src="img/avatar_2.jpg" alt="">
+                            <p>fabio</p>
+                        </li>
+                        <li>
+                            <img src="img/avatar_3.jpg" alt="">
+                            <p>samuele</p>
+                        </li>
+                        <li>
+                            <img src="img/avatar_4.jpg" alt="">
+                            <p>luisa</p>
+                        </li>
 
-            <!-- CONTENITORE DESTRO -->
-             <div class="cont-dx float-right"></div>
-         </div>
-    </div>
+                    </ul>
+                </div>
+                    
+            </div>
 
-    <script src="js/script.js"></script>
+   <!-- CONTENITORE DESTRO -->
+            <div class="cont-dx float-right">
+
+                <header class="lightgrey">
+                    <div>
+                        <div>
+                            <img src="img/avatar_1.jpg" alt="">
+                            <div id="head-dx-scritte">
+                                <p>Michele</p>
+                                <p>ultimo accesso oggi alle...</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <i class="fas fa-search icone"></i>
+                            <i class="fas fa-paperclip icone"></i>
+                            <i class="fas fa-ellipsis-v icone"></i>
+                        </div>
+                        
+                    </div>
+                </header>
+                
+                <main>
+                    
+                </main>
+
+                <footer>
+                    <div class="foot-dx lightgrey">
+                        <i class="far fa-smile "></i>
+                        <input type="text" placeholder="Scrivi un messaggio" name="message" class="msg-dx">
+                        <i class="fas fa-microphone "></i>
+                    </div>
+                </footer>
+              
+            </div>
+
+        </div>
+
+   </div>
+
+   <script src="js/script.js"></script>
 </body>
 </html>
+            
+                    
