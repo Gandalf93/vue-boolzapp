@@ -93,11 +93,15 @@
                             </div>
                         </div>
                        <div class="row">
-                        <div class="col float-left interlocutore" v-for='contatto in contatti'>
-                            <div v-for='messaggio in messages'>
-                                <p>{{messaggio.text}}</p>
-                                <p>{{messaggio.date}}</p>
-                                <p>{{messaggio.status}}</p>
+                        <div class="col float-left interlocutore"  v-for='contatto in contatti'>
+                            <div v-if='contatto.visible'>
+                                <div v-for='messaggio in messages'>
+                                    <p>{{messaggio.text}}</p>
+                                    <p>{{messaggio.date}}</p>
+                                    <p>{{messaggio.status}}</p>
+                                </div>
+                            </div>
+                               
                             </div>
                         </div>
                        </div>
