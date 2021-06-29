@@ -48,26 +48,14 @@
                     <i class="fas fa-search lente"></i>
                     <input type="text" placeholder="Cerca o inizia una nuova chat" name="search" id="contacts-filter" class="left-searchbar">
                 </div>
-        <!-- lista contatti                  -->
+        <!-- lista contatti-->
                 <div class="lista-persone">
                     <ul>
                         
-                        <li>
-                            <img src="img/avatar_1.jpg" alt="">
-                            <p>michele</p>
+                        <li v-for='contatto in contatti'>
+                            <img :src="'img/avatar' + contatto.avatar + '.jpg'" alt="">{{contatto.name}}
                         </li>
-                        <li>
-                            <img src="img/avatar_2.jpg" alt="">
-                            <p>fabio</p>
-                        </li>
-                        <li>
-                            <img src="img/avatar_3.jpg" alt="">
-                            <p>samuele</p>
-                        </li>
-                        <li>
-                            <img src="img/avatar_4.jpg" alt="">
-                            <p>luisa</p>
-                        </li>
+                       
 
                     </ul>
                 </div>
@@ -101,12 +89,16 @@
                     <div class="main-dx">
                         <div class="row">
                             <div class="col float-right utente">
-                                <p>messaggio utente</p>
+                                
                             </div>
                         </div>
                        <div class="row">
-                        <div class="col float-left interlocutore">
-                            <p>messaggio interlocutore</p>
+                        <div class="col float-left interlocutore" v-for='contatto in contatti'>
+                            <div v-for='messaggio in messages'>
+                                <p>{{messaggio.text}}</p>
+                                <p>{{messaggio.date}}</p>
+                                <p>{{messaggio.status}}</p>
+                            </div>
                         </div>
                        </div>
                         
