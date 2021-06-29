@@ -47,6 +47,8 @@ padding: 30px;
 .cont-sx{
     width: 40%;
     height: 500px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid lightgrey;
 }
     
@@ -108,9 +110,13 @@ padding: 30px;
 
 .lista-persone{
     padding: 10px;
-    overflow-y: scroll;
-    height: 50vh;
+    /* overflow-y: scroll;
+    height: 50vh; */
     
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .lista-persone ul{
@@ -135,18 +141,24 @@ align-items: center;
     border: 1px solid lightgrey;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    position: relative;
     background-image: url(../img/mine.jpg);
 }
-
-.cont-dx header div{
+ /* header dx   */
+.head-dx{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5px;
 }
-    
-  /* header dx   */
+
+.head-dx-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ 
 #head-dx-scritte{
     display: flex;
     flex-direction: column;
@@ -166,6 +178,13 @@ align-items: center;
    display: flex;
    justify-content: space-around;
    align-items: center;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+
+.foot-dx i{
+    color: grey;
 }
 
 .msg-dx{
@@ -173,17 +192,17 @@ align-items: center;
     padding: 10px;
 }
 
-.foot-dx i{
-    color: grey;
-}
+
+
 
 /* main dx */
 .main-dx{
+   
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
-    height:60vh;
-    padding-top: 10px;
-  display: flex;
-  flex-direction: column;
+    height: 100vh;
 }
 
 .utente{
@@ -197,4 +216,11 @@ align-items: center;
     padding: 10px;
     border-radius: 30px;
 }
+.interlocutore div p{
+    display: flex;
+    flex-direction: column;
+}
 
+.testo-small{
+    font-size: 10px;
+}
