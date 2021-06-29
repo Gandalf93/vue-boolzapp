@@ -121,6 +121,7 @@ padding: 30px;
 .lista-persone ul li{
 display: flex;
 margin: 10px 0;
+align-items: center;
 }
 
 
@@ -145,7 +146,7 @@ margin: 10px 0;
     padding: 5px;
 }
     
-    
+  /* header dx   */
 #head-dx-scritte{
     display: flex;
     flex-direction: column;
@@ -159,6 +160,7 @@ margin: 10px 0;
     margin-right:10px;
 } 
 
+/* footer dx */
 .foot-dx{
    padding: 5px;
    display: flex;
@@ -174,3 +176,25 @@ margin: 10px 0;
 .foot-dx i{
     color: grey;
 }
+
+/* main dx */
+.main-dx{
+    overflow-y: scroll;
+    height:60vh;
+    padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.utente{
+    background-color: rgb(184, 223, 126);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.interlocutore{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
