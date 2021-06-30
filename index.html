@@ -52,7 +52,7 @@
                 <div class="lista-persone">
                     <ul>
                         
-                        <li v-for='(contatto, index) in contatti' @click="setContattoAttivo(index)">
+                        <li v-for='(contatto, index) in contatti' @click="setContattoAttivo(index)" >
                             <img :src="'img/avatar' + contatto.avatar + '.jpg'" alt="">{{contatto.name}}
                         </li>
                        
@@ -67,8 +67,8 @@
 
                 
                     <div class="lightgrey head-dx">
-                        <div class="head-dx-img">
-                            <img src="img/avatar_1.jpg" alt="">
+                        <div class="head-dx-img" >
+                            <img :src="'img/avatar' + contatti[contattoAttivo].avatar + '.jpg'" alt="">
                             <div id="head-dx-scritte">
                                 <p>Michele</p>
                                 <p>ultimo accesso oggi alle...</p>
@@ -88,15 +88,11 @@
                         </div>
                                 
                        <div class="row">
-                            <div class="col float-left interlocutore" >
-                                <!-- v-for='contatto in contatti' -->
-                                <!-- <div v-if='' v-for='messaggio in contatto.messages'>
-                                    <p>{{messaggio.text}}
-                                        <span class="testo-small">{{messaggio.date}}</span>
-                                        <span class="testo-small">{{messaggio.status}}</span>
-                                    </p>
-                                    
-                                </div> -->
+                            <div class="col float-left interlocutore"  >
+
+                                
+                                
+                              
                             
                                
                             </div>
