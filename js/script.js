@@ -5,6 +5,7 @@ var app = new Vue (
     {
         el : '#app',
         data :{
+            contattoAttivo :0,
             contatti : [
                 {
                     name : 'Claudio',
@@ -58,5 +59,15 @@ var app = new Vue (
                 },
             ]
         },
+        methods:{
+            setContattoAttivo(indice){
+              this.contattoAttivo = indice;
+              console.log(this.contattoAttivo);
+ },
+        }
     }
 );
+
+
+
+// quando si clicca su un contatto compaiono i messaggi. Creo una funzione con un ciclo sui messaggi, che si attiva con un click quando il contatto del ciclo lista contatti è uguale a quello dei messaggi
