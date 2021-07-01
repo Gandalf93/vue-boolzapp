@@ -14,17 +14,22 @@ var app = new Vue (
                     messages: [
                     {
                     date: '10/01/2020 15:30:55',
-                    text: 'Hai portato a spasso il cane?',
+                    text: 'Usciamo sta sera?',
                     status: 'sent'
                     },
                     {
                     date: '10/01/2020 15:50:00',
-                    text: 'Ricordati di dargli da mangiare',
+                    text: 'Voglio andare a mangiare un panino',
                     status: 'sent'
                     },
                     {
+                    date: '10/01/2020 16:00:22',
+                    text: 'e un gelato',
+                    status: 'received'
+                    },
+                    {
                     date: '10/01/2020 16:15:22',
-                    text: 'Tutto fatto!',
+                    text: 'Ci vediamo alle 8 sotto casa',
                     status: 'received'
                     }
                     ],
@@ -32,38 +37,148 @@ var app = new Vue (
                 {
                     name: 'Giulia',
                     avatar: '_2',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Ricordati di comprare la farina e la mozzarella',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'E la coca cola',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 16:15:22',
+                    text: 'Se sei ancora lì compra pure il gelato e le fragole thx',
+                    status: 'received'
+                    }
+                    ],
                 },
                 {
                     name: 'Porthos',
                     avatar: '_3',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Ho fame',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'Non ho ancora mangiato oggi',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 16:15:22',
+                    text: 'Vieni a mettermi da mangiare',
+                    status: 'received'
+                    }
+                    ],
                 },
                 {
                     name: 'Giada',
                     avatar: '_4',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Non dare da mangiare a Porthos',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'Ha già mangiato, è a dieta',
+                    status: 'sent'
+                    }
+                
+                    ],
                 },
                 {
                     name: 'Babbo',
                     avatar: '_5',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Porthos mi sta chiedendo di mangiare',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'Gliene ho aggiunto',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 16:15:22',
+                    text: 'non ne ha bisogno, è in forma',
+                    status: 'received'
+                    }
+                    ],
                 },
                 {
                     name: 'Shiro',
                     avatar: '_6',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'ti ho portato un regalo',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'è una cosa da mangiare',
+                    status: 'sent'
+                    },
+                    
+                   
+                    ],
                 },
                 {
                     name: 'Penny',
                     avatar: '_7',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Ho fame',
+                    status: 'sent'
+                    },
+                    
+                    ],
                 },
                 {
                     name: 'Mamma',
                     avatar: '_8',
+                    visible: true,
+                    messages: [
+                    {
+                    date: '10/01/2020 15:30:55',
+                    text: 'sì, gli ho dato da mangiare',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 15:50:00',
+                    text: 'ne chiedeva, aveva fame poverino',
+                    status: 'sent'
+                    },
+                    {
+                    date: '10/01/2020 16:15:22',
+                    text: 'perché? è magro',
+                    status: 'received'
+                    }
+                    ],
                 },
             ]
         },
         methods:{
             setContattoAttivo(indice){
               this.contattoAttivo = indice;
-              console.log(this.contattoAttivo);
- },
+              
+            },
         }
     }
 );

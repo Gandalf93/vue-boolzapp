@@ -205,20 +205,20 @@ align-items: center;
     height: 100vh;
 }
 
-.utente{
+.utente div{
     background-color: rgb(184, 223, 126);
     padding: 10px;
     border-radius: 30px;
 }
 
-.interlocutore{
+
+.interlocutore div{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 10px;
     border-radius: 30px;
-}
-.interlocutore div p{
-    display: flex;
-    flex-direction: column;
+    margin: 10px 0;
 }
 
 .testo-small{

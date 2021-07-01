@@ -84,13 +84,14 @@
                     <div class="main-dx">
                         <div class="row">
                             <div class="col float-right utente">
+                                
                             </div>
                         </div>
                                 
                        <div class="row">
-                            <div class="col float-left interlocutore"  >
+                            <div class="col float-left interlocutore" >
 
-                                
+                                <div v-for='messaggio in contatti[contattoAttivo].messages'>{{messaggio.text}}</div> 
                                 
                               
                             
